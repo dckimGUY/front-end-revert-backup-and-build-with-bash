@@ -1,4 +1,4 @@
-![Title Block: Front-end BASH Scripts](./images-for-readme/a_title-block)
+![Title Block: Front-end BASH Scripts](./images-for-readme/a_title-block.png)
 
 # Front-End Revert Backup and Build with BASH, a simple solution for local control over front-end web development.
 
