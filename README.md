@@ -24,7 +24,7 @@ I might change it around a little to see if it can be even better but, you never
 
 # Here is a diagram
 
-![File Map for the backup/revert system](./images-for-readme)
+![File Map for the backup/revert system](./images-for-readme/a_file-map.png)
 
 This still might seem somewhat complex, and so I will now describe the structure of the files, and how the user will perceive this in daily work.
 
