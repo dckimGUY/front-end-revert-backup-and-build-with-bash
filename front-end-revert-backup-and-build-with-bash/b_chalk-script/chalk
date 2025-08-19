@@ -1,0 +1,55 @@
+/* Here is the 'CHALKING-UP' of the online program file. */
+
+echo '<!DOCTYPE html>' > index.html;
+echo '<head>' >> index.html;
+echo '<meta charset="UTF-8">' >> index.html;
+echo '<style>' >> index.html;
+echo '/* html, body           { cursor: none;                                          } */' >> index.html;
+echo 'html, body              { overflow: scroll; scrollbar-width: none;               }' >> index.html;
+echo 'body                    {                         width: 98%; height: 98%;       }' >> index.html;
+echo 'p                       { margin: 0;                                             }' >> index.html;
+echo 'body::-webkit-scrollbar { display: none;                                         }' >> index.html;
+echo '</style>' >> index.html;
+echo '<link rel="stylesheet" href="e_stylesheets/style.css"/>' >> index.html;
+echo '<title>Untitled1</title>' >> index.html;
+echo '</head>' >> index.html;
+echo '<body>' >> index.html;
+
+echo '<div id="scripts">' >> index.html;
+echo 'const' > ./js/z_jsObject/a_jsObject.js;
+echo 'js = {};' >> ./js/z_jsObject/a_jsObject.js;
+find js/a_programFunctions/ | sed "s/$/ = {};/g" | sed "s/\.js = {};//g" | tr '/' '.' | sed "s/\. / /g" > pasteFirst;
+find js/a_programFunctions/ | sed "s/^.*_/ = /g" | sed "s/\.js/;/g" > pasteLast;
+paste pasteFirst pasteLast | sed "s/;.*$/;/g" >> ./js/z_jsObject/a_jsObject.js;
+rm pasteFirst pasteLast;
+
+sed -i "s/\.\././g" ./js/z_jsObject/a_jsObject.js;
+sed -i '/js\.swp/d' ./js/z_jsObject/a_jsObject.js;
+
+find js -type f | sed '/js\.swp/d' | sed 's/^/<script src=".\//g' | sed 's/$/"><\/script>/g' >> index.html;
+
+echo '</div>' >> index.html;
+echo '</body>' >> index.html;
+echo '</html>' >> index.html;
+
+
+/* Here is a nifty tree representation, self-contained, searchable in the browser, with clickable links. */
+
+echo '<!DOCTYPE html>' > JS_treeDiagram.html;
+echo "<body>" >> JS_treeDiagram.html;
+echo '<pre style="font-size: 24px; font-style: italic; color: rgb(64,64,64);">' >> JS_treeDiagram.html;
+echo '<span style="font-size: 48px; color: #DEFF1C;">JS TREE DIAGRAM</span>' >> JS_treeDiagram.html;
+find js/ | sed 's/\(^.*\/\)\(.*$\)/\1<a style="color: #DEFF1C; font-style: normal; font-weight: bold;" href="\1\2">\2<\/a>/g' | sed '/\.js/!i <a>' >> JS_treeDiagram.html;
+echo "</pre>" >> JS_treeDiagram.html;
+echo "<script>" >> JS_treeDiagram.html;
+echo "document.body.style.backgroundColor = 'black';" >> JS_treeDiagram.html;
+echo "</script>" >> JS_treeDiagram.html;
+echo "</body>" >> JS_treeDiagram.html;
+echo "</html>" >> JS_treeDiagram.html;
+
+
+/* Here we are setting the permissions completely, which will help when it comes to compressing the file. */
+
+find . -type f -exec chmod 644 {} +;
+find . -type d -exec chmod 755 {} +;
+echo "... all done! index.html and JS_treeDiagram.html are revised and all permissions are set ...";

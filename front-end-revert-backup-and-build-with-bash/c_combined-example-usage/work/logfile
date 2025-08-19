@@ -1,0 +1,51 @@
+                                                                           
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ #                                                                       # 
+ #                                                                       # 
+ #      Assalamu Alaikum,                                                # 
+ #                                                                       # 
+ #              To get back into the most recent directory               # 
+ #              use the following commands at the prompt:                # 
+ #                                                                       # 
+ #                From the BASH startup directory press this:            # 
+ #                                                                       # 
+ #                         . ./menu_   then press <tab>                  # 
+ #                                                                       # 
+ #                         cd ~        will return to the                # 
+ #                                     starting directory.               # 
+ #                                                                       # 
+ #                From /name/ directory press this:                      # 
+ #                                                                       # 
+ #                         . ./start                                     # 
+ #                                                                       # 
+ #                From /name/work/ directory use this:                   # 
+ #                                                                       # 
+ #                         . ./resume                                    # 
+ #                                                                       # 
+ #              Using the backup and revert scripts is easy,             # 
+ #              just press these from within the directory               # 
+ #              system that has been prepared:                           # 
+ #                                                                       # 
+ #                         . ./backup    (use before experimenting)      # 
+ #                         . ./revert    (use to restore previous )      # 
+ #                         . ./log       (use this to make notes  )      # 
+ #                                                                       # 
+ #                                                                       # 
+ #                                                                       # 
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ #                                                                       # 
+ #                        BEGINNING OF LOGFILE                           # 
+ #                                                                       # 
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+
+
+ # # # # # # # # # # # # # # #
+ #                           #
+ #    2025/08/19 12:01:08    #
+ #                           #
+ # # # # # # # # # # # # # # #
+
+/c/Users/all/brandNewTestFolder/work/2025_08_August_19_Tuesday_12_01_07
+
+
