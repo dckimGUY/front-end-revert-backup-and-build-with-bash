@@ -34,6 +34,55 @@ This explanation will focus on the **combined example usage**. First I will tell
 
 This will build the basic backup/revert system and the starter folders. We will then be brought into the folder with the latest date, where I recommend that an initial backup be performed by typing '. ./backup'
 
-For information: The revert script will be access the same way as the others, and will only allow us to be brought back one step. If we wish to revert further than one step, we must manually change directories and then use the backup script from the desired directory. Then that directory will become the latest directory.
+For information: The revert script will be accessed the same way as the others, and will only allow us to be brought back one step. If we wish to revert further than one step, we must manually change directories and then use the backup script from the desired directory. Then that directory will become the latest directory.
+
+The script named 'setup' can be used indepently from the stuff in the folder labelled 'b_chalk-script', so, it is a very easy and versatile single file solution for local backup/revert, independent of GIT.
+
+I will now explain the second part, which contains the script named 'chalk'.
+
+The 'chalk' script expects certain directories to be present, and then it produces certain files.
+
+It is expected that the folders that you see are all present, and that there is a 'style.css' file inside of the 'e_stylesheets' directory.
+
+These files are what our script will write for us:
+- index.html
+- JS_treeDiagram.html
+- a_jsObject.js
+
+These files have different purposes and are assembled in different ways.
+
+If you look inside of the 'chalk' script, you will know immediately how the files are assembled. I will describe it briefly:
+
+The 'index.html' file is assembled with a minimal header, which has a reference to the 'style.css' file, that's why we needed it. Then there are references made to link all of the scripts that are found in the 'js' folder. Good thing that we made the a_jsObject.js script first. That will give a nice extra way of accessing out list of functions from the browser console. Just start typing 'js.' and you will get a list automatically. Then we put a footer on to the end, and that's pretty much it.
+
+We also draw up the 'JS_treeDiagram.html' file. That one gives a useful map of our 'a_programFunctions' folder.
+
+## Now I will tell about the 'a_programFunctions' folder
+
+This is very simple to use. We can put as many folders inside, and with whatever names we want. The script will later find them all out, and the files whcich are inside of them, and then include them for processing. The best thing that we can do is to name the folders with leading alphabetical letters. Like this: 'a_folder', then 'b_otherFolder', etc.
+
+This results in a very fast and convenient way of navigating out directories using BASH. It also keeps everything lined up the way we wanted it.
+
+## A special rule
+
+There is one special rule about the names of the files within the 'a_programFunctions' directory:
+
+The file names are of this form:
+
+'a_fileName' OR '1_filename'.
+
+Letters are the best because there are 26;
+
+Try it out, see how it works.
+
+Inside of the file there should be a function which has the exact same name. For example:
+
+file name = 'a_myFunctionName';
+
+inside the file it should use = 'function myFunctionName() {'
+
+## That is pretty much it
+
+Best wishes,
 
 -dckimGUY
