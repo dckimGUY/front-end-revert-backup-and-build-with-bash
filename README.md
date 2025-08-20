@@ -87,6 +87,8 @@ Here Is a picture giving my sample workflow while using the scripts for managing
 
 ![A visual demonstration of the workflow setup used for HW HTML Drafting Project](./images-for-readme/c_workflow-demonstration.png)
 
+If your coding style is like me, i. e. sporadic/haphazard, this setup might be exactly what you are looking for.
+
 Best wishes,
 
 -dckimGUY
