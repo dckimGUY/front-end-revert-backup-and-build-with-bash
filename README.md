@@ -85,7 +85,7 @@ inside the file it should use this: '**function myFunctionName**() {'
 
 Here Is a picture giving my sample workflow while using the scripts for managing the development workflow for the [HW HTML Drafting Project](https://github.com/dckimMysteryAuthor/HW-HTML-Drafting-Project).
 
-![A visual demonstration of the workflow setup used for HW HTML Drafting Project](./images-for-readme/c_workflow-demonstration)
+![A visual demonstration of the workflow setup used for HW HTML Drafting Project](./images-for-readme/c_workflow-demonstration.png)
 
 Best wishes,
 
